@@ -1,4 +1,3 @@
-// INICIO DE VARIABLES Y FUNCIONES
 
 class Peludo {
 
@@ -55,7 +54,6 @@ nuevoPeludo('Salem', 'gato', 'negro', 'cachorro', 'pequeño');
 nuevoPeludo('Filipo', 'perro', 'atigrado', 'adulto', 'mediano');
 
 
-
 let usuario = prompt("Bienvenido a Refugio Peludo. Empecemos con un usuario... ¿Cuál es tu nombre?");
 
 function menuOpciones() {
@@ -67,9 +65,6 @@ function menuOpciones() {
 }
 
 
-
-
-// INICIO DE FLUJO DEL PROGRAMA
 
 let opcionEscogida = parseInt(menuOpciones());
 
@@ -249,7 +244,6 @@ while (opcionEscogida != 3) {
 };
 
 
-// Mostrar cantidad de Peludos en el DOM
 
 let cantidadPeludos = document.getElementById("cantidadPeludos");
 
@@ -257,7 +251,6 @@ cantidadPeludos.innerText = `${arrayPeludos.length} peludos en adopción`;
 cantidadPeludos.style.color = "#fcba03";
 cantidadPeludos.style.fontWeight = "bold";
 
-// Mostrar Peludos dinamicamente en el DOM
 
 let contenedorTarjetas = document.querySelector('.peludosEnAdopcion');
 
