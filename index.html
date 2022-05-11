@@ -16,59 +16,17 @@
         <h1 class="my-5">Bienvenido a Refugio Peludo!</h1>
         <div class="container">
             <h2>Adoptá un Peludo</h2>
-            <h3>Dejá entrar a tu vida a tu nuevo mejor amigo. Solo necesitás un corazón abierto y <strong>elegir al
-                    Peludo que más te guste.</strong></h3>
-            <div class="row my-5">
-                <div class="col-12 col-md-6  col-lg-3">
-                    <div class="card my-3" style="width: 18rem;">
-                        <img src="./img/dogejpg.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Fatiga</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Adoptar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  col-lg-3">
-                    <div class="card my-3" style="width: 18rem;">
-                        <img src="./img/dogejpg.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Betun</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Adoptar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  col-lg-3">
-                    <div class="card my-3" style="width: 18rem;">
-                        <img src="./img/dogejpg.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Salem</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Adoptar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  col-lg-3">
-                    <div class="card my-3" style="width: 18rem;">
-                        <img src="./img/dogejpg.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Filipo</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Adoptar</a>
-                        </div>
-                    </div>
-                </div>
+            <h3>Dejá entrar a tu vida a tu nuevo mejor amigo. Solo necesitás un corazón abierto y elegir a alguno de
+                nuestros más de <span id="cantidadPeludos"></span>
+            </h3>
+            <div class="row my-5 peludosEnAdopcion">
+                <!-- Tarjetas generadas dinamicamente en el DOM -->
             </div>
         </div>
         <div class="container">
             <h2>Peludos que ya encontraron un hogar</h2>
             <h3>Desde <b>2015</b> unimos a más de <strong>300</strong> Peludos con sus nuevas familias.</h3>
-            <div class="row my-5">
+            <div class="row my-5" id="enAdopcion">
                 <div class="col-12 col-md-6  col-lg-3">
                     <div class="card my-3" style="width: 18rem;">
                         <img src="./img/dogejpg.webp" class="card-img-top" alt="...">
@@ -110,6 +68,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="text-center">
                 <a href="#" class="d-block">
                     <div class="btn btn-primary btn-lg">Dar un Peludo en adopción</div>

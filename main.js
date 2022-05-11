@@ -66,6 +66,9 @@ function menuOpciones() {
 
 }
 
+
+
+
 // INICIO DE FLUJO DEL PROGRAMA
 
 let opcionEscogida = parseInt(menuOpciones());
@@ -229,7 +232,7 @@ while (opcionEscogida != 3) {
 
             nuevoPeludo(pedirNombre, pedirEspecie, pedirPelaje, pedirEdad, pedirPorte);
 
-            alert(`Genial, ${pedirNombre} ya ha sido incorporado a la lista de peludos disponibles. Podras verificarlo seleccionando la opcion ADOPTAR A UN PELUDO.`)
+            alert(`Genial, ${pedirNombre} ya ha sido incorporado a la lista de peludos disponibles. Podras verificarlo seleccionando la opcion ADOPTAR A UN PELUDO o en el listado de la página web seleccionando la opción SALIR.`);
 
             break;
 
@@ -244,3 +247,37 @@ while (opcionEscogida != 3) {
     opcionEscogida = parseInt(menuOpciones());
 
 };
+
+
+// Mostrar cantidad de Peludos en el DOM
+
+let cantidadPeludos = document.getElementById("cantidadPeludos");
+
+cantidadPeludos.innerText = `${arrayPeludos.length} peludos en adopción`;
+cantidadPeludos.style.color = "#fcba03";
+cantidadPeludos.style.fontWeight = "bold";
+
+// Mostrar Peludos dinamicamente en el DOM
+
+let contenedorTarjetas = document.querySelector('.peludosEnAdopcion');
+
+
+for (const peludo of arrayPeludos) {
+
+    let html = `
+        <div class="card my-3" style="width: 18rem;">
+            <img src="./img/dogejpg.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nombre: ${peludo.nombre}</h5>
+                <p class="card-text">Edad: ${peludo.edad}</p>
+                <p class="card-text">Pelaje: ${peludo.pelaje}</p>                
+                <p class="card-text">Porte: ${peludo.porte}</p>
+                <a href="#" class="btn btn-primary">Adoptar</a>
+            </div>
+        </div>
+    `
+    let tarjeta = document.createElement('div');
+    tarjeta.className = "col-12 col-md-6 col-lg-3"
+    tarjeta.innerHTML = html;
+    contenedorTarjetas.appendChild(tarjeta);
+}
