@@ -86,7 +86,7 @@ let mostrarTarjeta = (especie) => {
                     <p class="card-text">Edad: ${peludo.edad}</p>
                     <p class="card-text">Pelaje: ${peludo.pelaje}</p>                
                     <p class="card-text">Porte: ${peludo.porte}</p>
-                    <a href="#" class="btn btn-primary">Adoptar</a>
+                    <a href="#" onclick="alert('Felicidades, elegiste a ${peludo.nombre}!!! Nuestro equipo de adopcion se contactará contigo a la brevedad para finalizar el proceso de adopción.')" class="btn btn-primary">Adoptar</a>
                 </div>
             </div>
         `

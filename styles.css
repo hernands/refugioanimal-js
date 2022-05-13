@@ -1,3 +1,13 @@
+body {
+    background-color: #f3c64b;
+
+}
+
+.container {
+    background-color: #fff;
+}
+
+
 .card-img-top {
     width: 100%;
     height: 15vw;
