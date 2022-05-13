@@ -1,7 +1,7 @@
 
 class Peludo {
 
-    constructor(nombre, especie, pelaje, edad, porte) {
+    constructor(nombre, especie, pelaje, edad, porte, imagen) {
 
         this.nombre = nombre.toUpperCase();
 
@@ -12,6 +12,8 @@ class Peludo {
         this.edad = edad;
 
         this.porte = porte;
+
+        this.imagen = imagen;
 
     };
 
@@ -39,27 +41,27 @@ class Peludo {
 const arrayPeludos = [];
 
 
-function nuevoPeludo(nombre, especie, pelaje, edad, porte) {
+function nuevoPeludo(nombre, especie, pelaje, edad, porte, imagen) {
 
-    arrayPeludos.push(new Peludo(nombre, especie, pelaje, edad, porte));
+    arrayPeludos.push(new Peludo(nombre, especie, pelaje, edad, porte, imagen));
 
 };
 
-nuevoPeludo('Fatiga', 'perro', 'pardo', 'adulto', 'mediano');
+nuevoPeludo('Fatiga', 'perro', 'pardo', 'adulto', 'mediano', 'https://px.cdn.bigbangnews.com/bigbang/022019/1552084486149.webp?cw=&ch=540&extw=jpg');
 
-nuevoPeludo('Betun', 'perro', 'marron', 'viejito', 'grande');
+nuevoPeludo('Betun', 'perro', 'marron', 'viejito', 'grande', 'https://www.personality-database.com/profile_images/203592.png');
 
-nuevoPeludo('Chems', 'perro', 'beige', 'adulto', 'mediano');
+nuevoPeludo('Chems', 'perro', 'beige', 'adulto', 'pequeño', 'https://i.pinimg.com/736x/03/6a/01/036a01687bf6430d12f40a1e611cd840.jpg');
 
-nuevoPeludo('Doge', 'perro', 'mostaza', 'adulto', 'mediano');
+nuevoPeludo('Doge', 'perro', 'mostaza', 'adulto', 'mediano', './img/dogejpg.webp');
 
-nuevoPeludo('Salem', 'gato', 'negro', 'cachorro', 'pequeño');
+nuevoPeludo('Salem', 'gato', 'negro', 'cachorro', 'pequeño', 'https://pbs.twimg.com/profile_images/616367539820589056/h4SNK5g9_400x400.jpg');
 
-nuevoPeludo('Grumpy', 'gato', 'blanco', 'adulto', 'mediano');
+nuevoPeludo('Grumpy', 'gato', 'blanco', 'adulto', 'mediano', 'https://imgflip.com/s/meme/Grumpy-Cat.jpg');
 
-nuevoPeludo('Gato con Botas', 'gato', 'naranja', 'adulto', 'pequeño');
+nuevoPeludo('Gato con Botas', 'gato', 'naranja', 'adulto', 'pequeño', 'https://i2-prod.mirror.co.uk/incoming/article25609261.ece/ALTERNATES/s615b/0_PUSS-IN-BOOTS.jpg');
 
-nuevoPeludo('Taylor', 'gato', 'atigrado', 'adulto', 'grande');
+nuevoPeludo('Taylor', 'gato', 'atigrado', 'adulto', 'grande', 'https://i.pinimg.com/originals/1b/c2/77/1bc2772104246b7e829ddab4bcb78d14.jpg');
 
 
 
@@ -78,7 +80,7 @@ let mostrarTarjeta = (especie) => {
 
         let html = `
             <div class="card my-3" style="width: 18rem;">
-                <img src="./img/dogejpg.webp" class="card-img-top" alt="...">
+                <img src=${peludo.imagen} class="card-img-top" alt="${peludo.nombre}">
                 <div class="card-body">
                     <h5 class="card-title">Nombre: ${peludo.nombre}</h5>
                     <p class="card-text">Edad: ${peludo.edad}</p>
