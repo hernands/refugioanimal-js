@@ -5,57 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/043647ae19.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Estilos propios  -->
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Refugio Peludo</title>
+    <title>Refugio Peludo - Adoptar</title>
 </head>
 
 <body>
 
-    <div class="container my-5 p-5 rounded text-center">
-        <h1 class="my-5">Bienvenido a Refugio Peludo!</h1>
-        <div class="container mb-5">
-            <h2>Para involucrarte en un proceso de adopción, primero debes <a class="btn btn-primary"
-                    data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                    aria-controls="collapseExample">REGISTRAR TUS DATOS</a> para que nuestro equipo de adopción
-                pueda contactarte</h2>
+    <header>
+        <nav class="px-5 py-3 navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
 
-            <div class="collapse mt-5" id="collapseExample">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="d-flex align-items-center">
+                        <img src="../img/Recurso 1.png" alt="logo" width="100"
+                            class="d-inline-block align-text-top me-3">
+                        <h2 class="headerTitle">Refugio <br>Peludo</h2>
+                    </div>
+                </a>
 
-                <form class="formularioRegistro bordeColor rounded">
-                    <label class="form-label mt-3">Tu nombre</label>
-                    <input class="form-control" type="text" id="nombreUsuario">
-                    <label class="form-label mt-3" id="mailUsuario">Tu mail</label>
-                    <input class="form-control" type="email">
-                    <label class="form-label mt-3" id="telefonoUsuario">Tu teléfono</label>
-                    <input class="form-control" type="tel">
-
-                    <button type="submit" class="btn btn-lg mt-5 btn-primary" id="botonRegistro"> Registrarme </button>
-
-                </form>
-
-            </div>
-
-        </div>
-        <div class="container contenedorPrincipal rounded">
-
-            <h2>Adoptá un Peludo</h2>
-            <h3>Dejá entrar a tu vida a tu nuevo mejor amigo. Solo necesitás un corazón abierto y elegir a
-                alguno denuestros más de <span id="cantidadPeludos"></span></h3>
-            <div class="row my-5 peludosEnAdopcion">
-                <h3 class="mt-3">¿Qué te gustaría adoptar?</h3>
-                <div class="btn-group btn-group-lg my-3" role="group" aria-label="...">
-                    <div href="" class="btn-lg btn btn-primary" id="verPerros">Ver perros</div>
-                    <div href="" class="btn-lg btn btn-primary" id="verGatos">Ver gatos</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link px-3" href="../index.html"> <span class="menuItem">Home</span></a>
+                        <a class="nav-link px-3 active" aria-current="page" href="./adoptar.html"> <span
+                                class="menuItem">Adoptar</span></a>
+                        <a class="nav-link px-3" href="./dar-en-adopcion.html"> <span class="menuItem">Dar en
+                                adopción</span></a>
+                        <a class="nav-link px-3" href="./usuario.html"> <span class="menuItem">Mi
+                                información</span></a>
+                    </div>
                 </div>
-                <!-- Tarjetas generadas dinamicamente en el DOM desde main.js -->
             </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container my-5 p-5 rounded text-center">
+            <h1 class="my-5">Bienvenido a Refugio Peludo!</h1>
+            <div class="container mb-5">
+                <h2>Para involucrarte en un proceso de adopción, primero debes <a class="btn btn-primary"
+                        data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample">REGISTRAR TUS DATOS</a> para que nuestro equipo de adopción
+                    pueda contactarte</h2>
+
+                <div class="collapse mt-5" id="collapseExample">
+
+                    <form class="formularioRegistro bordeColor rounded">
+                        <label class="form-label mt-3">Tu nombre</label>
+                        <input class="form-control" type="text" id="nombreUsuario">
+                        <label class="form-label mt-3" id="mailUsuario">Tu mail</label>
+                        <input class="form-control" type="email">
+                        <label class="form-label mt-3" id="telefonoUsuario">Tu teléfono</label>
+                        <input class="form-control" type="tel">
+
+                        <button type="submit" class="btn btn-lg mt-5 btn-primary" id="botonRegistro"> Registrarme
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="container contenedorPrincipal rounded">
+
+                <h2>Adoptá un Peludo</h2>
+                <h3>Dejá entrar a tu vida a tu nuevo mejor amigo. Solo necesitás un corazón abierto y elegir a
+                    alguno denuestros más de <span id="cantidadPeludos"></span></h3>
+                <div class="row my-5 peludosEnAdopcion">
+                    <h3 class="mt-3">¿Qué te gustaría adoptar?</h3>
+                    <div class="btn-group btn-group-lg my-3" role="group" aria-label="...">
+                        <div href="" class="btn-lg btn btn-primary" id="verPerros">Ver perros</div>
+                        <div href="" class="btn-lg btn btn-primary" id="verGatos">Ver gatos</div>
+                    </div>
+                    <!-- Tarjetas generadas dinamicamente en el DOM desde main.js -->
+                </div>
+
+            </div>
+
 
         </div>
 
 
-    </div>
+    </main>
+
+    <footer class="text-center pt-5 pb-3">
+        <div class="contenedorLogo">
+            <img src="../img/Recurso 5.png" alt="logo footer">
+        </div>
+        <h3 class="my-3">DISCLAIMER</h3>
+        <p> Este sitio es un proyecto personal, como parte del curso de programación Javascript en Coderhouse. </p>
+        <p> Si eres es un reclutador, o si quieres utilizar este proyecto para tu organización de rescate animal
+            <strong> de forma gratuita</strong>, puedes contactarme <a href="mailto:hernan.gds22@gmail.com"
+                class="text-decoration-none footerLink">haciendo click aquí</a>
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center socialIcons mt-5">
+            <li>
+                <a href="#" class="iconLink"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#" class="iconLink"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#" class="iconLink"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+                <a href="#" class="iconLink"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
