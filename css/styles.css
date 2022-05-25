@@ -19,6 +19,15 @@
 
 /* Estilos Globales */
 
+.contenedorLogo {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.contenedorLogo img {
+    width: 100%;
+}
+
 body {
     background-color: var(--crema);
     font-family: var(--parrafos);
@@ -58,7 +67,7 @@ h6 {
     font-family: var(--titulos) !important;
     font-size: 1.5rem;
     padding: 1rem;
-    transition: transform 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 .botonLg:hover {
@@ -89,6 +98,61 @@ h6 {
 
 }
 
+.tituloSeccion {
+    font-size: 3rem;
+    color: var(--marron);
+    width: 100%;
+    border-bottom: 3px solid var(--naranja);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.tituloSeccion span {
+    background: var(--crema);
+    padding: 0 10px;
+}
+
+footer {
+    background-color: var(--marron);
+}
+
+footer h3 {
+    color: var(--crema);
+}
+
+footer p {
+    color: var(--naranja) !important;
+}
+
+.footerLink {
+    color: var(--crema);
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.footerLink:hover {
+    color: var(--naranja);
+}
+
+.socialIcons .iconLink {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+
+.socialIcons .iconLink i {
+    color: var(--crema);
+    transition: ease-in-out 0.3s;
+}
+
+.socialIcons .iconLink i:hover {
+    color: var(--naranja);
+    transform: scale(1.2);
+}
+
+
+
 /* Estilos Index */
 
 .heroIndex {
@@ -112,4 +176,15 @@ h6 {
 .heroIndex h2 {
     font-family: var(--subtitulos);
     font-size: 2.5rem;
+}
+
+.tituloPasos {
+    font-size: 2.5rem;
+    font-family: var(--subtitulos);
+    font-weight: bold;
+    color: var(--naranja);
+}
+
+.iconoPasos {
+    font-size: 3rem;
 }
