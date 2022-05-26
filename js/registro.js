@@ -47,17 +47,17 @@ const usuarioLocalParseado = JSON.parse(usuarioLocal);
 if (usuarioLocal != null) {
 
     divRegistrado.classList.remove('d-none');
+    const mostrarDatosNombre = document.getElementById('datosNombre');
+    const mostrarDatosMail = document.getElementById('datosMail');
+    const mostrarDatosTel = document.getElementById('datosTelefono');
+
+    mostrarDatosNombre.innerHTML = usuarioLocalParseado.nombre;
+    mostrarDatosMail.innerHTML = usuarioLocalParseado.mail;
+    mostrarDatosTel.innerHTML = usuarioLocalParseado.telefono;
 
 } else divNoRegistrado.classList.remove('d-none');
 
-const mostrarDatosNombre = document.getElementById('datosNombre');
-const mostrarDatosMail = document.getElementById('datosMail');
-const mostrarDatosTel = document.getElementById('datosTelefono');
 const btnEliminarUsuario = document.getElementById('eliminarUsuario');
-
-mostrarDatosNombre.innerHTML = usuarioLocalParseado.nombre;
-mostrarDatosMail.innerHTML = usuarioLocalParseado.mail;
-mostrarDatosTel.innerHTML = usuarioLocalParseado.telefono;
 
 const eliminarUsuario = () => {
 
