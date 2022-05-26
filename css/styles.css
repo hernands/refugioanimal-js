@@ -85,6 +85,12 @@ h6 {
     object-fit: cover;
 }
 
+.card-img,
+.card-img-top {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
 .tab-content,
 .contenedorPrincipal,
 .bordeColor {
@@ -114,6 +120,10 @@ h6 {
 .tituloSeccion span {
     background: var(--crema);
     padding: 0 10px;
+}
+
+.card {
+    border-radius: 0.8rem;
 }
 
 footer {
@@ -243,4 +253,46 @@ footer p {
     font-family: var(--subtitulos);
     font-weight: bold;
     font-size: 2.5rem;
+}
+
+.contenedorAdopcion {
+    background-color: var(--naranja);
+
+}
+
+.contenedorAdopcion h2,
+.contenedorAdopcion h3 {
+    color: var(--marron);
+    font-weight: bold;
+}
+
+.contenedorAdopcion h2 {
+    font-family: var(--subtitulos);
+}
+
+.contenedorAdopcion h3 {
+    font-family: var(--titulos);
+    font-size: 2.5rem;
+}
+
+.botonFiltro {
+    border: var(--crema) 5px solid;
+    border-radius: 0.8rem;
+    width: 200px;
+    height: 200px;
+    transition: ease-in-out 0.3s;
+}
+
+.botonFiltro:hover {
+    transform: scale(1.1);
+}
+
+.iconoFiltro {
+    color: var(--crema);
+    font-size: 4rem;
+}
+
+.tituloFiltro {
+    font-family: var(--subtitulos) !important;
+    font-size: 3.5rem !important;
 }
