@@ -28,6 +28,10 @@
     width: 100%;
 }
 
+main {
+    min-height: 50vh;
+}
+
 body {
     background-color: var(--crema);
     font-family: var(--parrafos);
@@ -187,4 +191,56 @@ footer p {
 
 .iconoPasos {
     font-size: 3rem;
+}
+
+/*Estilos paginas internas*/
+
+.textoRegistro {
+    font-size: 1.5rem;
+}
+
+#formularioRegistro {
+    background-color: var(--naranja);
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+#formularioRegistro label {
+    font-family: var(--subtitulos);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.botonGlobal {
+    background-color: #743C08;
+    border: 0;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-family: var(--subtitulos);
+}
+
+.botonGlobal:hover {
+    background-color: var(--naranjaHover);
+}
+
+.tarjetaContacto {
+    display: inline-block;
+    background-color: var(--naranja);
+    border-radius: 0.8rem;
+    padding: 3rem;
+}
+
+.tarjetaContacto p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#tituloInfoContacto {
+    font-family: var(--subtitulos);
+    font-weight: bold;
+    font-size: 2.5rem;
 }
