@@ -43,6 +43,9 @@ let contenedorTarjetas = document.querySelector('.peludosEnAdopcion');
 let mostrarTarjeta = (especie) => {
 
     for (const peludo of especie) {
+        let botonAdopcion = document.createElement('div');
+        botonAdopcion.className =
+            botonAdopcion.innerText = 'Adoptar';
 
         let html = `
             <div class="card my-3" style="width: 18rem;">
@@ -52,7 +55,7 @@ let mostrarTarjeta = (especie) => {
                     <p class="card-text fw-bold">Edad: ${peludo.edad}</p>
                     <p class="card-text fw-bold">Pelaje: ${peludo.pelaje}</p>                
                     <p class="card-text fw-bold">Porte: ${peludo.porte}</p>
-                    <div class="btn btn-primary botonGlobal d-block botonAdoptar">Adoptar</div>
+                    <div class='btn btn-primary botonGlobal d-block botonAdoptar'>Adoptar</div>
                 </div>
             </div>
         `
@@ -61,7 +64,13 @@ let mostrarTarjeta = (especie) => {
         tarjeta.innerHTML = html;
         contenedorTarjetas.appendChild(tarjeta);
     }
+    const botonAdoptar = document.getElementsByClassName('botonAdoptar');
 
+    for (let i = 0; i < botonAdoptar.length; i++) {
+        botonAdoptar[i].addEventListener('click', () => {
+            avisoAdopcion()
+        })
+    }
 }
 
 const botonGato = document.getElementById("verGatos");
@@ -89,8 +98,7 @@ function seleccionEspecie(especie) {
 
 }
 
-
-const botonAdoptar = Array.from(document.getElementsByClassName('botonAdoptar'));
+const botonAdoptar = document.getElementsByClassName('botonAdoptar');
 
 function avisoAdopcion() {
     const usuarioLocal = localStorage.getItem('usuario');
@@ -115,13 +123,8 @@ function avisoAdopcion() {
 
 };
 
-console.log(botonAdoptar);
 
 
-botonAdoptar.forEach(item => {
-    item.addEventListener('click', () => {
-        avisoAdopcion()
-    })
-});
+
 
 
