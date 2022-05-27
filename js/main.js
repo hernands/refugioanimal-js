@@ -90,3 +90,38 @@ function seleccionEspecie(especie) {
 }
 
 
+const botonAdoptar = Array.from(document.getElementsByClassName('botonAdoptar'));
+
+function avisoAdopcion() {
+    const usuarioLocal = localStorage.getItem('usuario');
+    if (usuarioLocal != null) {
+
+        Swal.fire({
+            icon: 'success',
+            title: '¡Excelente!',
+            text: 'Nuestro equipo de adopción se comunicará contigo utilizando tus datos de contacto.'
+        })
+
+    } else {
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Lo sentimos',
+            text: 'Para poder adoptar debes registrar tus datos primero.',
+            footer: '<a href="">Puedes registrarte haciendo click aquí</a>'
+        })
+
+    }
+
+};
+
+console.log(botonAdoptar);
+
+
+botonAdoptar.forEach(item => {
+    item.addEventListener('click', () => {
+        avisoAdopcion()
+    })
+});
+
+
