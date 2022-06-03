@@ -44,8 +44,8 @@ let mostrarTarjeta = (especie) => {
 
     for (const peludo of especie) {
         let botonAdopcion = document.createElement('div');
-        botonAdopcion.className =
-            botonAdopcion.innerText = 'Adoptar';
+
+        botonAdopcion.innerText = 'Adoptar';
 
         let html = `
             <div class="card my-3" style="width: 18rem;">
@@ -122,9 +122,6 @@ function avisoAdopcion() {
     }
 
 };
-
-
-
 
 
 

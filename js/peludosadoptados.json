@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Boby",
+        "especie": "perro",
+        "pelaje": "blanco",
+        "edad": 1,
+        "porte": 2,
+        "imagen": "https://static.wikia.nocookie.net/memes-pedia/images/1/14/Jotchua.jpg/revision/latest/top-crop/width/360/height/450?cb=20211213221015&path-prefix=es",
+        "adopotado": true
+    },
+    {
+        "nombre": "Toby",
+        "especie": "gato",
+        "pelaje": "atigrado",
+        "edad": 1,
+        "porte": 2,
+        "imagen": "https://popcat.click/twitter-card.jpg",
+        "adopotado": true
+    },
+    {
+        "nombre": "Loby",
+        "especie": "perro",
+        "pelaje": "atigrado",
+        "edad": 1,
+        "porte": 2,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFt4nCXrZJGeYyKTjKdEtfbG7hy0S_GtJzQsbF05oc3I7DhmL-tZphDcapzLNXxKDE2o&usqp=CAU",
+        "adopotado": true
+    },
+    {
+        "nombre": "Doby",
+        "especie": "gato",
+        "pelaje": "blanco",
+        "edad": 1,
+        "porte": 2,
+        "imagen": "https://static.wikia.nocookie.net/memes-pedia/images/6/63/Polite_Cat.jpeg/revision/latest/top-crop/width/360/height/450?cb=20211113003020&path-prefix=es",
+        "adopotado": true
+    },
+    {
+        "nombre": "Roby",
+        "especie": "perro",
+        "pelaje": "atigrado",
+        "edad": 1,
+        "porte": 2,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHrH9XGaNLlzTD3A4HhkKjXplhds1m2xr1g44rmde_nu0YQGPB74hyrVfJU5kYsuF2Lc&usqp=CAU",
+        "adopotado": true
+    },
+    {
+        "nombre": "Moby",
+        "especie": "gato",
+        "pelaje": "negro",
+        "edad": 1,
+        "porte": 2,
+        "imagen": "https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2019/08/de-donde-salio-el-meme-del-gato-en-la-mesa-portada.jpg",
+        "adopotado": true
+    }
+]
