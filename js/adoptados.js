@@ -12,7 +12,7 @@ const traerDatosJson = async () => {
     for (const peludo of adoptados) {
 
         let tarjetaAdoptados = document.createElement("div");
-        tarjetaAdoptados.classList.add("card");
+        tarjetaAdoptados.classList.add("card", "m-3");
         tarjetaAdoptados.setAttribute("style", "width: 18rem;");
 
         tarjetaAdoptados.innerHTML = `
@@ -22,11 +22,11 @@ const traerDatosJson = async () => {
             <p class="card-text fw-bold">Edad: ${peludo.edad}</p>
             <p class="card-text fw-bold">Pelaje: ${peludo.pelaje}</p>                
             <p class="card-text fw-bold">Porte: ${peludo.porte}</p>
-            <div class='btn btn-primary botonGlobal d-block botonAdoptar'>Adoptar</div>
         </div>        
         `
-
-        document.getElementById("seccionAdoptados").append(tarjetaAdoptados);
+        let seccionAdoptados = document.getElementById("seccionAdoptados");
+        seccionAdoptados.classList.add("d-flex", "flex-wrap", "justify-content-center");
+        seccionAdoptados.append(tarjetaAdoptados);
 
     }
 
