@@ -101,12 +101,13 @@ function seleccionEspecie(especie) {
 function avisoAdopcion() {
 
     const usuarioLocal = localStorage.getItem('usuario');
+    const usuarioLocalParseado = JSON.parse(usuarioLocal);
 
     if (usuarioLocal != null) {
 
         Swal.fire({
             icon: 'success',
-            title: '¡Excelente!',
+            title: `¡Excelente, ${usuarioLocalParseado.nombre}!`,
             text: 'Nuestro equipo de adopción se comunicará contigo utilizando tus datos de contacto.'
         })
 
