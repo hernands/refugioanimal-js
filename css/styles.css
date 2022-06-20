@@ -87,8 +87,8 @@ h6 {
 
 .card-img,
 .card-img-top {
-    border-top-left-radius: 0.8rem;
-    border-top-right-radius: 0.8rem;
+    border-top-left-radius: calc(0.8rem - 4px);
+    border-top-right-radius: calc(0.8rem - 4px);
 }
 
 .tab-content,
@@ -202,6 +202,16 @@ footer p {
 .iconoPasos {
     font-size: 3rem;
 }
+
+.tarjetaAdoptados {
+    border: var(--naranja) 4px solid;
+}
+
+.tarjetaAdoptados .card-body {
+    padding: 1.5rem;
+}
+
+
 
 /*Estilos paginas internas*/
 

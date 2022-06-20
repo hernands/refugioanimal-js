@@ -2,7 +2,7 @@ let adoptados;
 
 const traerDatosJson = async () => {
 
-    let response = await fetch("../js/peludosadoptados.json");
+    let response = await fetch("../js/adoptados.json");
     let data = await response.json();
 
     adoptados = data;
@@ -12,7 +12,7 @@ const traerDatosJson = async () => {
     for (const peludo of adoptados) {
 
         let tarjetaAdoptados = document.createElement("div");
-        tarjetaAdoptados.classList.add("card", "m-3");
+        tarjetaAdoptados.classList.add("card", "m-3", "tarjetaAdoptados");
         tarjetaAdoptados.setAttribute("style", "width: 18rem;");
 
         tarjetaAdoptados.innerHTML = `

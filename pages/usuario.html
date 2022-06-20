@@ -44,8 +44,6 @@
                     <div class="navbar-nav">
                         <a class="nav-link px-3" href="../index.html"> <span class="menuItem">Home</span></a>
                         <a class="nav-link px-3" href="./adoptar.html"> <span class="menuItem">Adoptar</span></a>
-                        <a class="nav-link px-3" href="./dar-en-adopcion.html"> <span class="menuItem">Dar en
-                                adopción</span></a>
                         <a class="nav-link px-3 active" aria-current="page" href="./usuario.html"> <span
                                 class="menuItem">Mi
                                 información</span></a>
@@ -98,9 +96,15 @@
 
                     <div class="d-flex mt-5 flex-column justify-content-around">
                         <p><b>Lo usaremos solo si decides iniciar un proceso de adopción.</b></p>
-                        <p><b>Nombre: </b> <span id="datosNombre"> </span></p>
-                        <p><b>E-mail: </b> <span id="datosMail"> </span></p>
-                        <p><b>Teléfono: </b> <span id="datosTelefono"> </span></p>
+                        <p><b>Nombre: </b> <span id="datosNombre">
+                                <!-- Traido por JS desde LocalStorage -->
+                            </span></p>
+                        <p><b>E-mail: </b> <span id="datosMail">
+                                <!-- Traido por JS desde LocalStorage -->
+                            </span></p>
+                        <p><b>Teléfono: </b> <span id="datosTelefono">
+                                <!-- Traido por JS desde LocalStorage -->
+                            </span></p>
                         <div id="borradoExitoso" class="text-center"></div>
                         <div class="btn btn-lg btn-primary mt-3 botonGlobal" id="eliminarUsuario">Borrar/cambiar</div>
                     </div>

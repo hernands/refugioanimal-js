@@ -45,8 +45,6 @@
                         <a class="nav-link px-3" href="../index.html"> <span class="menuItem">Home</span></a>
                         <a class="nav-link px-3 active" aria-current="page" href="./adoptar.html"> <span
                                 class="menuItem">Adoptar</span></a>
-                        <a class="nav-link px-3" href="./dar-en-adopcion.html"> <span class="menuItem">Dar en
-                                adopción</span></a>
                         <a class="nav-link px-3" href="./usuario.html"> <span class="menuItem">Mi
                                 información</span></a>
                     </div>
@@ -65,19 +63,21 @@
             <h2>Dejá entrar a tu vida a tu nuevo mejor amigo. Solo necesitás un corazón abierto y elegir a
                 alguno de nuestros <span id="cantidadPeludos"></span></h2>
 
-            <div class="row mt-5 peludosEnAdopcion" id="peludosEnAdopcion">
-                <h3 class="mb-5">¿Qué te gustaría adoptar?</h3>
-                <div class="d-flex justify-content-center">
-                    <div class="botonFiltro btn d-flex flex-column justify-content-center mx-3" id="verPerros">
-                        <i class="fa-solid fa-dog iconoFiltro"></i>
-                        <h3 class="tituloFiltro">Perros</h3>
-                    </div>
-                    <div class="botonFiltro btn d-flex flex-column justify-content-center mx-3" id="verGatos">
-                        <i class="fa-solid fa-cat iconoFiltro"></i>
-                        <h3 class="tituloFiltro">Gatos</h3>
-                    </div>
+            <h3 class="my-5">¿Qué te gustaría adoptar?</h3>
+            <div class="d-flex justify-content-center">
+                <div class="botonFiltro btn d-flex flex-column justify-content-center mx-3" id="verPerros">
+                    <i class="fa-solid fa-dog iconoFiltro"></i>
+                    <h3 class="tituloFiltro">Perros</h3>
                 </div>
-                <!-- Tarjetas generadas dinamicamente en el DOM desde main.js -->
+                <div class="botonFiltro btn d-flex flex-column justify-content-center mx-3" id="verGatos">
+                    <i class="fa-solid fa-cat iconoFiltro"></i>
+                    <h3 class="tituloFiltro">Gatos</h3>
+                </div>
+            </div>
+
+            <div class="row mt-5 peludosEnAdopcion" id="peludosEnAdopcion">
+
+                <!-- Tarjetas generadas dinamicamente en el DOM desde adoptar.js -->
             </div>
 
 
@@ -117,7 +117,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/adoptar.js"></script>
 </body>
 
 </html>

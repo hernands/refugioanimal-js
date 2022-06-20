@@ -62,7 +62,7 @@ const btnEliminarUsuario = document.getElementById('eliminarUsuario');
 const eliminarUsuario = () => {
 
     const borradoExitoso = document.getElementById('borradoExitoso');
-    borradoExitoso.innerHTML = `Borraste los datos actuales. Puedes vovler a registrarte si quieres.`;
+    borradoExitoso.innerHTML = `Borraste los datos actuales. Puedes volver a registrarte si quieres.`;
     localStorage.removeItem("usuario");
     window.setTimeout(() => { location.reload() }, 2000);
 

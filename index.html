@@ -45,8 +45,6 @@
                         <a class="nav-link px-3 active" aria-current="page" href="./index.html"> <span
                                 class="menuItem">Home</span></a>
                         <a class="nav-link px-3" href="./pages/adoptar.html"> <span class="menuItem">Adoptar</span></a>
-                        <a class="nav-link px-3" href="./pages/dar-en-adopcion.html"> <span class="menuItem">Dar en
-                                adopción</span></a>
                         <a class="nav-link px-3" href="./pages/usuario.html"> <span class="menuItem">Mi
                                 información</span></a>
                     </div>
@@ -59,17 +57,22 @@
         <section class="heroIndex">
             <div class="container text-center h-100 d-flex flex-column justify-content-center">
                 <h1>¡Bienvenido a Refugio Peludo!</h1>
-                <h2>Abrí tu corazón a nuestros más de
-                    <span id="cantidadPeludos">
-                        <!-- Numero dinamico generado en JS -->
-                    </span>
-                </h2>
+                <h2>Abrí tu corazón al próximo integrante de tu familia</h2>
                 <a href="./pages/adoptar.html">
                     <div class="btn btn-lg mt-5 btn-primary botonLg">QUIERO ADOPTAR</div>
                 </a>
             </div>
         </section>
-        <section class="procesoIndex pt-5 mt-5">
+        <section class="procesoIndex pt-5 mb-5">
+            <div class="container pt-5 text-center">
+                <h2 class="tituloSeccion mb-5"><span>Historias con final feliz</span></h2>
+                <h3 class="mb-5">Conocé a los Peludos que ya encontraron su hogar</h3>
+                <div id="seccionAdoptados">
+                    <!-- Tarjetas generadas en el DOM desde adoptados.js -->
+                </div>
+            </div>
+        </section>
+        <section class="procesoIndex pb-5 mb-5">
             <div class="container py-5 text-center">
                 <h2 class="tituloSeccion mb-5"><span>El proceso</span></h2>
                 <div class="row">
@@ -109,15 +112,7 @@
                 </div>
             </div>
         </section>
-        <section class="procesoIndex pb-5 mb-5">
-            <div class="container pb-5 text-center">
-                <h2 class="tituloSeccion mb-5"><span>Historias con final feliz</span></h2>
-                <h3 class="mb-5">Conocé a los Peludos que ya encontraron su hogar</h3>
-                <div id="seccionAdoptados">
 
-                </div>
-            </div>
-        </section>
 
     </main>
 
@@ -150,7 +145,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
     <script src="./js/adoptados.js"></script>
 
 

@@ -12,7 +12,6 @@ class Peludo {
 
     };
 
-
 };
 
 const arrayPeludos = [];
@@ -76,11 +75,12 @@ let mostrarTarjeta = (especie) => {
 const botonGato = document.getElementById("verGatos");
 const botonPerro = document.getElementById("verPerros");
 
-botonGato.addEventListener("click", () => { seleccionEspecie("gato") }, { once: true });
-
-botonPerro.addEventListener("click", () => { seleccionEspecie("perro") }, { once: true });
+botonGato.addEventListener("click", () => { seleccionEspecie("gato") });
+botonPerro.addEventListener("click", () => { seleccionEspecie("perro") });
 
 function seleccionEspecie(especie) {
+
+    contenedorTarjetas.innerHTML = '';
 
     if (especie == "gato") {
 
@@ -98,10 +98,10 @@ function seleccionEspecie(especie) {
 
 }
 
-const botonAdoptar = document.getElementsByClassName('botonAdoptar');
-
 function avisoAdopcion() {
+
     const usuarioLocal = localStorage.getItem('usuario');
+
     if (usuarioLocal != null) {
 
         Swal.fire({
@@ -116,7 +116,7 @@ function avisoAdopcion() {
             icon: 'error',
             title: 'Lo sentimos',
             text: 'Para poder adoptar debes registrar tus datos primero.',
-            footer: '<a href="">Puedes registrarte haciendo click aquí</a>'
+            footer: '<a href="../pages/usuario.html">Puedes registrarte haciendo click aquí</a>'
         })
 
     }

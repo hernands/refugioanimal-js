@@ -2,36 +2,36 @@
     {
         "nombre": "Boby",
         "especie": "perro",
-        "pelaje": "blanco",
+        "pelaje": "crema",
         "edad": 1,
-        "porte": 2,
+        "porte": "pequeño",
         "imagen": "https://pbs.twimg.com/media/FJ564dJXwAEeNvE.png",
         "adopotado": true
     },
     {
         "nombre": "Toby",
         "especie": "gato",
-        "pelaje": "atigrado",
-        "edad": 1,
-        "porte": 2,
+        "pelaje": "manchado",
+        "edad": 3,
+        "porte": "mediano",
         "imagen": "https://popcat.click/twitter-card.jpg",
         "adopotado": true
     },
     {
         "nombre": "Loby",
         "especie": "perro",
-        "pelaje": "atigrado",
-        "edad": 1,
-        "porte": 2,
+        "pelaje": "blanco",
+        "edad": 2,
+        "porte": "pequeño",
         "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFt4nCXrZJGeYyKTjKdEtfbG7hy0S_GtJzQsbF05oc3I7DhmL-tZphDcapzLNXxKDE2o&usqp=CAU",
         "adopotado": true
     },
     {
         "nombre": "Doby",
         "especie": "gato",
-        "pelaje": "blanco",
-        "edad": 1,
-        "porte": 2,
+        "pelaje": "atigrado",
+        "edad": 4,
+        "porte": "grande",
         "imagen": "https://w0.peakpx.com/wallpaper/886/340/HD-wallpaper-beluga-meme-cat-memes.jpg",
         "adopotado": true
     }
