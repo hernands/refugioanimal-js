@@ -1,3 +1,5 @@
+// Si el usuario no está registrado 
+
 const usuario = {
 
     nombre: '',
@@ -25,7 +27,7 @@ const crearusuario = () => {
     const registroExitoso = `¡Gracias por registrarte ${inputNombre}! Puedes seguir navegando.`
     const registroFallido = `Los campos no pueden estar vacíos.`
 
-    if (inputNombre != '' && inputEmail != '' && inputTel != '') {
+    if (inputNombre !== '' && inputEmail !== '' && inputTel !== '') {
 
         usuario.nombre = inputNombre;
         usuario.mail = inputEmail;
@@ -39,6 +41,8 @@ const crearusuario = () => {
     } else mensajeRegistro.innerHTML = registroFallido;
 
 };
+
+// Si el usuario está registrado
 
 const usuarioLocal = localStorage.getItem("usuario");
 const usuarioLocalParseado = JSON.parse(usuarioLocal);
